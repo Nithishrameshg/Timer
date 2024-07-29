@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="timer" id="timerDisplay">00:00:00</div>
+        <div class="buttons">
+            <button id="start"><i class="fa fa-play"></i> Start</button>
+            <button id="stop"><i class="fa fa-stop"></i> Stop</button>
+            <button id="reset"><i class="fa fa-refresh"></i> Reset</button>
+            <button id="edit"><i class="fa fa-edit"></i> Edit</button>
+        </div>
+        <div class="edit-panel" id="editPanel" style="display: none;">
+            <input type="number" id="hours" min="0" placeholder="HH">
+            <input type="number" id="minutes" min="0" max="59" placeholder="MM">
+            <input type="number" id="seconds" min="0" max="59" placeholder="SS">
+            <button id="setTime">Set Time</button>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
